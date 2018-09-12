@@ -108,16 +108,20 @@ function go(downLoadUrl){
         return inquirer.prompt([
             {
                 name: 'name',
-                message: '项目的名称',
+                message: '名称',
                 default: context.name
             },
             {
+                name: 'version',
+                message: '名称',
+            },
+            {
                 name: 'author',
-                message: '项目的作者'
+                message: '作者'
             },
             {
                 name: 'description',
-                message: '项目的简介',
+                message: '简介',
                 default: 'A project named ' + context.name
             }
         ]).then(answers => {
