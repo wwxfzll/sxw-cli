@@ -113,7 +113,7 @@ function go(downLoadUrl){
             },
             {
                 name: 'version',
-                message: '名称',
+                message: '版本',
             },
             {
                 name: 'author',
