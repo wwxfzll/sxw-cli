@@ -1,5 +1,14 @@
 {
-    "component": "https://github.com:wwxfzll/component-env#master",
-    "product": "https://github.com:wwxfzll/project-env#master",
-    "project": "https://github.com:wwxfzll/project-env#master"
+    "component": {
+        "downloadUrl": "https://github.com:wwxfzll/component-env#master",
+        "fillMatchs": ["index.html"]
+    },
+    "product": {
+        "downloadUrl": "https://github.com:wwxfzll/project-env#master",
+        "fillMatchs": []
+    },
+    "project": {
+        "downloadUrl": "https://github.com:wwxfzll/project-env#master",
+        "fillMatchs": []
+    }
 }

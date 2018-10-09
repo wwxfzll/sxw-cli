@@ -85,14 +85,14 @@ if (next) {
             ]
         }
     ]).then(answers => {
-        let downLoadUrl = templatePath[answers.type]
-        go(downLoadUrl)
+        let config = templatePath[answers.type]
+        go(config.downloadUrl, config.fillMatchs)
     })
 }
 
 
 
-function go(downLoadUrl){
+function go(downLoadUrl, fillMatchs){
     next.then(projectRoot => {
         if(projectRoot !== '.'){
             fs.mkdirSync(projectRoot)
@@ -125,7 +125,7 @@ function go(downLoadUrl){
                 default: 'A project named ' + context.name
             }
         ]).then(answers => {
-            generator(answers, context.downloadTemp, context.root).then(result => {
+            generator(answers, context.downloadTemp, context.root, fillMatchs).then(result => {
                 console.log(logSymbols.success, chalk.green('创建成功'))
                 //console.log('创建成功')
                 console.log()
