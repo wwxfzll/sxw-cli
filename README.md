@@ -10,3 +10,5 @@
 5. npm install
 
 6. sxw-cli init [projectName | componentName]
+
+# author: wwx
