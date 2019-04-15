@@ -1,14 +1,38 @@
 {
-    "component": {
-        "downloadUrl": "https://github.com:wwxfzll/component-env#master",
-        "fillMatchs": ["index.html"]
-    },
-    "product": {
-        "downloadUrl": "https://github.com:wwxfzll/project-env#master",
-        "fillMatchs": []
-    },
-    "project": {
-        "downloadUrl": "https://github.com:wwxfzll/project-env#master",
-        "fillMatchs": []
+    "choices": [
+        {
+            "name": "组件",
+            "value": "component"
+        },
+        {
+            "name": "产品",
+            "value": "product"
+        },
+        {
+            "name": "项目",
+            "value": "project"
+        },
+        {
+            "name": "express架构",
+            "value": "express"
+        }
+    ],
+    "paths":{
+        "component": {
+            "downloadUrl": "https://github.com:wwxfzll/component-env#master",
+            "fillMatchs": ["index.html"]
+        },
+        "product": {
+            "downloadUrl": "https://github.com:wwxfzll/project-env#master",
+            "fillMatchs": []
+        },
+        "project": {
+            "downloadUrl": "https://github.com:wwxfzll/project-env#master",
+            "fillMatchs": []
+        },
+        "express": {
+            "downloadUrl": "https://github.com:wwxfzll/express-web-fw#master",
+            "fillMatchs": []
+        }
     }
 }

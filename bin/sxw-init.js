@@ -69,23 +69,10 @@ if (next) {
             name: 'type',
             type: 'list',
             message: '开发类型',
-            choices: [
-                {
-                    name: '组件',
-                    value: 'component'
-                },
-                {
-                    name: '产品',
-                    value: 'product'
-                },
-                {
-                    name: '项目',
-                    value: 'project'
-                }
-            ]
+            choices: templatePath.choices
         }
     ]).then(answers => {
-        let config = templatePath[answers.type]
+        let config = templatePath.paths[answers.type]
         go(config.downloadUrl, config.fillMatchs)
     })
 }
